@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F1567DD231D68F00089ECB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1567DC231D68F00089ECB6 /* AppDelegate.m */; };
+		4F1567E0231D68F00089ECB6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1567DF231D68F00089ECB6 /* ViewController.m */; };
+		4F1567E3231D68F00089ECB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1567E1231D68F00089ECB6 /* Main.storyboard */; };
+		4F1567E5231D68F40089ECB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F1567E4231D68F40089ECB6 /* Assets.xcassets */; };
+		4F1567E8231D68F40089ECB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F1567E6231D68F40089ECB6 /* LaunchScreen.storyboard */; };
+		4F1567EB231D68F40089ECB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1567EA231D68F40089ECB6 /* main.m */; };
+		4F1567F9231D6AB40089ECB6 /* SparkTrajectory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1567F8231D6AB40089ECB6 /* SparkTrajectory.m */; };
+		4F1567FD231D6BA90089ECB6 /* CubicBezierTrajectory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F1567FC231D6BA90089ECB6 /* CubicBezierTrajectory.m */; };
+		4F156802231D6D1F0089ECB6 /* ClassicSparkTrajectoryFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F156801231D6D1F0089ECB6 /* ClassicSparkTrajectoryFactory.m */; };
+		4F156807231D72850089ECB6 /* UIColor+SparkColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F156806231D72850089ECB6 /* UIColor+SparkColor.m */; };
+		4F15680C231D734D0089ECB6 /* SparkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F15680B231D734D0089ECB6 /* SparkView.m */; };
+		4F156811231D739B0089ECB6 /* CircleColorSparkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F156810231D739B0089ECB6 /* CircleColorSparkView.m */; };
+		4F156816231D74180089ECB6 /* CircleColorSparkViewFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F156815231D74180089ECB6 /* CircleColorSparkViewFactory.m */; };
+		4F15681A231D75510089ECB6 /* DefaultSparkViewFactoryData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F156819231D75510089ECB6 /* DefaultSparkViewFactoryData.m */; };
+		4F156823231D774A0089ECB6 /* FireworkSpark.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F156822231D774A0089ECB6 /* FireworkSpark.m */; };
+		4F156826231D79350089ECB6 /* Firework.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F156825231D79350089ECB6 /* Firework.m */; };
+		4F156829231D7A820089ECB6 /* ClassicFirework.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F156827231D7A810089ECB6 /* ClassicFirework.m */; };
+		4F156834231D7D3A0089ECB6 /* ClassicFireworkAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F156833231D7D3A0089ECB6 /* ClassicFireworkAnimator.m */; };
+		4F15683B231D7E590089ECB6 /* ClassicFireworkMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F15683A231D7E590089ECB6 /* ClassicFireworkMaker.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4F1567D8231D68F00089ECB6 /* sparkler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sparkler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F1567DB231D68F00089ECB6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4F1567DC231D68F00089ECB6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4F1567DE231D68F00089ECB6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4F1567DF231D68F00089ECB6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4F1567E2231D68F00089ECB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4F1567E4231D68F40089ECB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F1567E7231D68F40089ECB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4F1567E9231D68F40089ECB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F1567EA231D68F40089ECB6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4F1567F5231D6A5B0089ECB6 /* ISparkTrajectory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISparkTrajectory.h; sourceTree = "<group>"; };
+		4F1567F7231D6AB40089ECB6 /* SparkTrajectory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SparkTrajectory.h; sourceTree = "<group>"; };
+		4F1567F8231D6AB40089ECB6 /* SparkTrajectory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SparkTrajectory.m; sourceTree = "<group>"; };
+		4F1567FB231D6BA90089ECB6 /* CubicBezierTrajectory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubicBezierTrajectory.h; sourceTree = "<group>"; };
+		4F1567FC231D6BA90089ECB6 /* CubicBezierTrajectory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CubicBezierTrajectory.m; sourceTree = "<group>"; };
+		4F1567FE231D6C1C0089ECB6 /* ISparkTrajectoryFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISparkTrajectoryFactory.h; sourceTree = "<group>"; };
+		4F1567FF231D6CD00089ECB6 /* IClassicSparkTrajectoryFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IClassicSparkTrajectoryFactory.h; sourceTree = "<group>"; };
+		4F156800231D6D1F0089ECB6 /* ClassicSparkTrajectoryFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassicSparkTrajectoryFactory.h; sourceTree = "<group>"; };
+		4F156801231D6D1F0089ECB6 /* ClassicSparkTrajectoryFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassicSparkTrajectoryFactory.m; sourceTree = "<group>"; };
+		4F156805231D72850089ECB6 /* UIColor+SparkColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SparkColor.h"; sourceTree = "<group>"; };
+		4F156806231D72850089ECB6 /* UIColor+SparkColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SparkColor.m"; sourceTree = "<group>"; };
+		4F15680A231D734D0089ECB6 /* SparkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SparkView.h; sourceTree = "<group>"; };
+		4F15680B231D734D0089ECB6 /* SparkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SparkView.m; sourceTree = "<group>"; };
+		4F15680F231D739B0089ECB6 /* CircleColorSparkView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleColorSparkView.h; sourceTree = "<group>"; };
+		4F156810231D739B0089ECB6 /* CircleColorSparkView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleColorSparkView.m; sourceTree = "<group>"; };
+		4F156813231D73F00089ECB6 /* ISparkViewFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISparkViewFactory.h; sourceTree = "<group>"; };
+		4F156814231D74180089ECB6 /* CircleColorSparkViewFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleColorSparkViewFactory.h; sourceTree = "<group>"; };
+		4F156815231D74180089ECB6 /* CircleColorSparkViewFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircleColorSparkViewFactory.m; sourceTree = "<group>"; };
+		4F156817231D743C0089ECB6 /* ISparkViewFactoryData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISparkViewFactoryData.h; sourceTree = "<group>"; };
+		4F156818231D75510089ECB6 /* DefaultSparkViewFactoryData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultSparkViewFactoryData.h; sourceTree = "<group>"; };
+		4F156819231D75510089ECB6 /* DefaultSparkViewFactoryData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultSparkViewFactoryData.m; sourceTree = "<group>"; };
+		4F15681F231D770C0089ECB6 /* IFirework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFirework.h; sourceTree = "<group>"; };
+		4F156821231D774A0089ECB6 /* FireworkSpark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FireworkSpark.h; sourceTree = "<group>"; };
+		4F156822231D774A0089ECB6 /* FireworkSpark.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FireworkSpark.m; sourceTree = "<group>"; };
+		4F156824231D79350089ECB6 /* Firework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Firework.h; sourceTree = "<group>"; };
+		4F156825231D79350089ECB6 /* Firework.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Firework.m; sourceTree = "<group>"; };
+		4F156827231D7A810089ECB6 /* ClassicFirework.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassicFirework.m; sourceTree = "<group>"; };
+		4F156828231D7A810089ECB6 /* ClassicFirework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassicFirework.h; sourceTree = "<group>"; };
+		4F156831231D7D290089ECB6 /* ISparkViewAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISparkViewAnimator.h; sourceTree = "<group>"; };
+		4F156832231D7D3A0089ECB6 /* ClassicFireworkAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassicFireworkAnimator.h; sourceTree = "<group>"; };
+		4F156833231D7D3A0089ECB6 /* ClassicFireworkAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassicFireworkAnimator.m; sourceTree = "<group>"; };
+		4F156839231D7E590089ECB6 /* ClassicFireworkMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassicFireworkMaker.h; sourceTree = "<group>"; };
+		4F15683A231D7E590089ECB6 /* ClassicFireworkMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassicFireworkMaker.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F1567D5231D68F00089ECB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F1567CF231D68F00089ECB6 = {
+			isa = PBXGroup;
+			children = (
+				4F1567DA231D68F00089ECB6 /* sparkler */,
+				4F1567D9231D68F00089ECB6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F1567D9231D68F00089ECB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F1567D8231D68F00089ECB6 /* sparkler.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F1567DA231D68F00089ECB6 /* sparkler */ = {
+			isa = PBXGroup;
+			children = (
+				4F1567F1231D69050089ECB6 /* Core */,
+				4F1567DB231D68F00089ECB6 /* AppDelegate.h */,
+				4F1567DC231D68F00089ECB6 /* AppDelegate.m */,
+				4F1567DE231D68F00089ECB6 /* ViewController.h */,
+				4F1567DF231D68F00089ECB6 /* ViewController.m */,
+				4F1567E1231D68F00089ECB6 /* Main.storyboard */,
+				4F1567E4231D68F40089ECB6 /* Assets.xcassets */,
+				4F1567E6231D68F40089ECB6 /* LaunchScreen.storyboard */,
+				4F1567E9231D68F40089ECB6 /* Info.plist */,
+				4F1567EA231D68F40089ECB6 /* main.m */,
+			);
+			path = sparkler;
+			sourceTree = "<group>";
+		};
+		4F1567F1231D69050089ECB6 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4F156835231D7E010089ECB6 /* 烟花生成器 */,
+				4F15682A231D7CDB0089ECB6 /* 烟花动画 */,
+				4F156804231D726F0089ECB6 /* Category */,
+				4F15681B231D76580089ECB6 /* 烟花(火花+轨迹) */,
+				4F156808231D72D60089ECB6 /* 火花样式 */,
+				4F1567F2231D690D0089ECB6 /* 火花轨迹 */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		4F1567F2231D690D0089ECB6 /* 火花轨迹 */ = {
+			isa = PBXGroup;
+			children = (
+				4F1567FA231D6B820089ECB6 /* Factory */,
+				4F1567F6231D6A680089ECB6 /* Abstract Class */,
+				4F1567F4231D699C0089ECB6 /* Imp */,
+				4F1567F3231D692F0089ECB6 /* Protocol */,
+			);
+			path = "火花轨迹";
+			sourceTree = "<group>";
+		};
+		4F1567F3231D692F0089ECB6 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				4F1567F5231D6A5B0089ECB6 /* ISparkTrajectory.h */,
+				4F1567FE231D6C1C0089ECB6 /* ISparkTrajectoryFactory.h */,
+				4F1567FF231D6CD00089ECB6 /* IClassicSparkTrajectoryFactory.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		4F1567F4231D699C0089ECB6 /* Imp */ = {
+			isa = PBXGroup;
+			children = (
+				4F1567FB231D6BA90089ECB6 /* CubicBezierTrajectory.h */,
+				4F1567FC231D6BA90089ECB6 /* CubicBezierTrajectory.m */,
+			);
+			path = Imp;
+			sourceTree = "<group>";
+		};
+		4F1567F6231D6A680089ECB6 /* Abstract Class */ = {
+			isa = PBXGroup;
+			children = (
+				4F1567F7231D6AB40089ECB6 /* SparkTrajectory.h */,
+				4F1567F8231D6AB40089ECB6 /* SparkTrajectory.m */,
+			);
+			path = "Abstract Class";
+			sourceTree = "<group>";
+		};
+		4F1567FA231D6B820089ECB6 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				4F156800231D6D1F0089ECB6 /* ClassicSparkTrajectoryFactory.h */,
+				4F156801231D6D1F0089ECB6 /* ClassicSparkTrajectoryFactory.m */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		4F156804231D726F0089ECB6 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				4F156805231D72850089ECB6 /* UIColor+SparkColor.h */,
+				4F156806231D72850089ECB6 /* UIColor+SparkColor.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		4F156808231D72D60089ECB6 /* 火花样式 */ = {
+			isa = PBXGroup;
+			children = (
+				4F156812231D73DD0089ECB6 /* Protocol */,
+				4F15680E231D73790089ECB6 /* Factory */,
+				4F15680D231D73700089ECB6 /* Imp */,
+				4F156809231D73320089ECB6 /* Abstract Class */,
+			);
+			path = "火花样式";
+			sourceTree = "<group>";
+		};
+		4F156809231D73320089ECB6 /* Abstract Class */ = {
+			isa = PBXGroup;
+			children = (
+				4F15680A231D734D0089ECB6 /* SparkView.h */,
+				4F15680B231D734D0089ECB6 /* SparkView.m */,
+			);
+			path = "Abstract Class";
+			sourceTree = "<group>";
+		};
+		4F15680D231D73700089ECB6 /* Imp */ = {
+			isa = PBXGroup;
+			children = (
+				4F15680F231D739B0089ECB6 /* CircleColorSparkView.h */,
+				4F156810231D739B0089ECB6 /* CircleColorSparkView.m */,
+				4F156818231D75510089ECB6 /* DefaultSparkViewFactoryData.h */,
+				4F156819231D75510089ECB6 /* DefaultSparkViewFactoryData.m */,
+			);
+			path = Imp;
+			sourceTree = "<group>";
+		};
+		4F15680E231D73790089ECB6 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				4F156814231D74180089ECB6 /* CircleColorSparkViewFactory.h */,
+				4F156815231D74180089ECB6 /* CircleColorSparkViewFactory.m */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		4F156812231D73DD0089ECB6 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				4F156813231D73F00089ECB6 /* ISparkViewFactory.h */,
+				4F156817231D743C0089ECB6 /* ISparkViewFactoryData.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		4F15681B231D76580089ECB6 /* 烟花(火花+轨迹) */ = {
+			isa = PBXGroup;
+			children = (
+				4F156820231D771D0089ECB6 /* Abstract Class */,
+				4F15681E231D76E40089ECB6 /* Tuple */,
+				4F15681D231D76D90089ECB6 /* Protocol */,
+				4F15681C231D76D40089ECB6 /* Imp */,
+			);
+			path = "烟花(火花+轨迹)";
+			sourceTree = "<group>";
+		};
+		4F15681C231D76D40089ECB6 /* Imp */ = {
+			isa = PBXGroup;
+			children = (
+				4F156828231D7A810089ECB6 /* ClassicFirework.h */,
+				4F156827231D7A810089ECB6 /* ClassicFirework.m */,
+			);
+			path = Imp;
+			sourceTree = "<group>";
+		};
+		4F15681D231D76D90089ECB6 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				4F15681F231D770C0089ECB6 /* IFirework.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		4F15681E231D76E40089ECB6 /* Tuple */ = {
+			isa = PBXGroup;
+			children = (
+				4F156821231D774A0089ECB6 /* FireworkSpark.h */,
+				4F156822231D774A0089ECB6 /* FireworkSpark.m */,
+			);
+			path = Tuple;
+			sourceTree = "<group>";
+		};
+		4F156820231D771D0089ECB6 /* Abstract Class */ = {
+			isa = PBXGroup;
+			children = (
+				4F156824231D79350089ECB6 /* Firework.h */,
+				4F156825231D79350089ECB6 /* Firework.m */,
+			);
+			path = "Abstract Class";
+			sourceTree = "<group>";
+		};
+		4F15682A231D7CDB0089ECB6 /* 烟花动画 */ = {
+			isa = PBXGroup;
+			children = (
+				4F156830231D7D120089ECB6 /* Protocol */,
+				4F15682F231D7D040089ECB6 /* Imp */,
+			);
+			path = "烟花动画";
+			sourceTree = "<group>";
+		};
+		4F15682F231D7D040089ECB6 /* Imp */ = {
+			isa = PBXGroup;
+			children = (
+				4F156832231D7D3A0089ECB6 /* ClassicFireworkAnimator.h */,
+				4F156833231D7D3A0089ECB6 /* ClassicFireworkAnimator.m */,
+			);
+			path = Imp;
+			sourceTree = "<group>";
+		};
+		4F156830231D7D120089ECB6 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				4F156831231D7D290089ECB6 /* ISparkViewAnimator.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		4F156835231D7E010089ECB6 /* 烟花生成器 */ = {
+			isa = PBXGroup;
+			children = (
+				4F156839231D7E590089ECB6 /* ClassicFireworkMaker.h */,
+				4F15683A231D7E590089ECB6 /* ClassicFireworkMaker.m */,
+			);
+			path = "烟花生成器";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F1567D7231D68F00089ECB6 /* sparkler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F1567EE231D68F40089ECB6 /* Build configuration list for PBXNativeTarget "sparkler" */;
+			buildPhases = (
+				4F1567D4231D68F00089ECB6 /* Sources */,
+				4F1567D5231D68F00089ECB6 /* Frameworks */,
+				4F1567D6231D68F00089ECB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sparkler;
+			productName = sparkler;
+			productReference = 4F1567D8231D68F00089ECB6 /* sparkler.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F1567D0231D68F00089ECB6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = pmst;
+				TargetAttributes = {
+					4F1567D7231D68F00089ECB6 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 4F1567D3231D68F00089ECB6 /* Build configuration list for PBXProject "sparkler" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F1567CF231D68F00089ECB6;
+			productRefGroup = 4F1567D9231D68F00089ECB6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F1567D7231D68F00089ECB6 /* sparkler */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F1567D6231D68F00089ECB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F1567E8231D68F40089ECB6 /* LaunchScreen.storyboard in Resources */,
+				4F1567E5231D68F40089ECB6 /* Assets.xcassets in Resources */,
+				4F1567E3231D68F00089ECB6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F1567D4231D68F00089ECB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F1567F9231D6AB40089ECB6 /* SparkTrajectory.m in Sources */,
+				4F1567E0231D68F00089ECB6 /* ViewController.m in Sources */,
+				4F156811231D739B0089ECB6 /* CircleColorSparkView.m in Sources */,
+				4F156816231D74180089ECB6 /* CircleColorSparkViewFactory.m in Sources */,
+				4F15680C231D734D0089ECB6 /* SparkView.m in Sources */,
+				4F156802231D6D1F0089ECB6 /* ClassicSparkTrajectoryFactory.m in Sources */,
+				4F1567EB231D68F40089ECB6 /* main.m in Sources */,
+				4F156829231D7A820089ECB6 /* ClassicFirework.m in Sources */,
+				4F1567FD231D6BA90089ECB6 /* CubicBezierTrajectory.m in Sources */,
+				4F156823231D774A0089ECB6 /* FireworkSpark.m in Sources */,
+				4F156834231D7D3A0089ECB6 /* ClassicFireworkAnimator.m in Sources */,
+				4F156807231D72850089ECB6 /* UIColor+SparkColor.m in Sources */,
+				4F15683B231D7E590089ECB6 /* ClassicFireworkMaker.m in Sources */,
+				4F1567DD231D68F00089ECB6 /* AppDelegate.m in Sources */,
+				4F156826231D79350089ECB6 /* Firework.m in Sources */,
+				4F15681A231D75510089ECB6 /* DefaultSparkViewFactoryData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4F1567E1231D68F00089ECB6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F1567E2231D68F00089ECB6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4F1567E6231D68F40089ECB6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4F1567E7231D68F40089ECB6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4F1567EC231D68F40089ECB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4F1567ED231D68F40089ECB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F1567EF231D68F40089ECB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66AQ356GA4;
+				INFOPLIST_FILE = sparkler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pmst.sparkler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F1567F0231D68F40089ECB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 66AQ356GA4;
+				INFOPLIST_FILE = sparkler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pmst.sparkler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F1567D3231D68F00089ECB6 /* Build configuration list for PBXProject "sparkler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F1567EC231D68F40089ECB6 /* Debug */,
+				4F1567ED231D68F40089ECB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F1567EE231D68F40089ECB6 /* Build configuration list for PBXNativeTarget "sparkler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F1567EF231D68F40089ECB6 /* Debug */,
+				4F1567F0231D68F40089ECB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F1567D0231D68F00089ECB6 /* Project object */;
+}

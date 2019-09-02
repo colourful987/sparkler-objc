@@ -1,2 +1,2 @@
 # sparkler-objc
-sparkler/firework
+This is rewrite [sparkler-swift]() by objective-c.
